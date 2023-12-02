@@ -13,6 +13,5 @@ def get_closest_in_sorted_list(L: list[float], num: float):
             closest_candidates[index] = L[index]
         except IndexError:
             pass
-        
-    print(closest_candidates)
+
     return min(closest_candidates, key=lambda key: abs(closest_candidates[key] - num))
